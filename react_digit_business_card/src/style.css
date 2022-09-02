@@ -1,0 +1,71 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+}
+
+footer {
+  background: #161619;
+  width: 317px;
+  height: 64px;
+  display: flex;
+  align-items: center;
+  padding: 0px 28px;
+}
+
+footer > img {
+  padding-left: 20px;
+}
+
+.about,
+.interests {
+  width: 317px;
+  color: #dcdcdc;
+  padding: 20px 35px 0px 35px;
+  background: #1a1b21;
+}
+
+p {
+  font-size: 10px;
+  padding-top: 5px;
+}
+
+.info {
+  align-items: center;
+  width: 317px;
+  background: #1a1b21;
+}
+
+.container {
+  background-color: #23252c;
+  width: 550px;
+  padding: 0px 116px;
+}
+
+button {
+  display: flex;
+  align-items: center;
+  width: 250px;
+  height: 35px;
+  padding: 9px 90px;
+  margin: 16px 35px 0px 35px;
+}
+
+.info--name {
+  font-size: 25px;
+  color: #dcdcdc;
+  margin: 20px 0px 5px 0px;
+  text-align: center;
+}
+
+.info--web {
+  font-size: 10px;
+  color: #dcdcdc;
+  text-align: center;
+  padding-top: 10px;
+}
+
+.info--skill {
+  color: #f3bf99;
+  font-size: 13px;
+  text-align: center;
+}
