@@ -1,11 +1,11 @@
 import Header from "./components/Header";
-import InputSection from "./components/InputSection";
+import Meme from "./components/Meme";
 
 function App() {
   return (
     <div>
       <Header />
-      <InputSection />
+      <Meme />
     </div>
   );
 }
