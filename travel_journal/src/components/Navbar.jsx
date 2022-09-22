@@ -4,7 +4,7 @@ function Navbar() {
   return (
     <nav className="navbar">
       <img src={globe_logo} />
-      <p>kekw</p>
+      <p>kkw</p>
     </nav>
   );
 }
