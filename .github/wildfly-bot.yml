@@ -7,17 +7,19 @@ wildfly:
 
   format:                 # Validation check for a correct format of the Pull Request
     title:                                      # Enabled by default. You have to disable explicitly.
-      enabled: false                            # If check enabled. By default, this setting is set true
+      enabled: true                            # If check enabled. By default, this setting is set true
       message: "Wrong content of the title"    # Override default message. Message is display if check does not succeed
 
     description:
       regexes:            # List of objects, where the object is as follows:
-        - pattern: "JIRA:\\s+https://issues.redhat.com/browse/WFLY-\\d+|https://issues.redhat.com/browse/WFLY-\\d+"   # Regex pattern must be matched by the title
+        - pattern: "\\s+https://issues.redhat.com/browse/WFLY-\\d+|https://issues.redhat.com/browse/WFLY-\\d+"   # Regex pattern must be matched by the title
           message: "The PR description must contain a link to the JIRA issue"                                         # Message to display if check does not succeed
+        - pattern: "JIRA:"
+          message: "The PR description must contain JIRA string"
       message: "The PR description is not correct"                                                                    # Default message to display if a object is missing message field
 
     commit:                                     # Enabled by default. You have to disable explicitly.
-      enabled: true                             # If check enabled. By default, this setting is set true
+      enabled: false                             # If check enabled. By default, this setting is set true
       message: "Wrong commit message!"          # Override default message. Message is display if check does not succeed
 
   emails:     # List of email addresses, which will receive updates from this app
